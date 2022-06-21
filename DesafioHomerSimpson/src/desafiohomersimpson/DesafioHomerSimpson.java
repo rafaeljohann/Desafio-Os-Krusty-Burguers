@@ -59,7 +59,8 @@ public class DesafioHomerSimpson {
             hamburguerKrusty.qtdComida--;
             hamburguerKrusty.tempoRestante = hamburguerKrusty.tempoRestante + qtdTempoKrusty;
             
-            if ((count == 1 || hamburguerKrusty.qtdCerveja <= melhorHamburguer.qtdCerveja) && hamburguerKrusty.qtdMaxComida > melhorHamburguer.qtdMaxComida) {
+            if ((count == 1 || hamburguerKrusty.qtdCerveja <= melhorHamburguer.qtdCerveja) && hamburguerKrusty.qtdMaxComida > melhorHamburguer.qtdMaxComida
+                || (hamburguerKrusty.qtdCerveja == 0 && melhorHamburguer.qtdCerveja > 0)) {
                 melhorHamburguer.setQtdCerveja(hamburguerKrusty.getQtdCerveja());
                 melhorHamburguer.setQtdMaxComida(hamburguerKrusty.getQtdMaxComida());
             }
@@ -101,7 +102,8 @@ public class DesafioHomerSimpson {
             hamburguerApu.qtdComida--;
             hamburguerApu.tempoRestante = hamburguerApu.tempoRestante + qtdTempoApu;
             
-            if ((count == 1 || hamburguerApu.qtdCerveja <= melhorHamburguer.qtdCerveja) && hamburguerApu.qtdMaxComida > melhorHamburguer.qtdMaxComida) {
+            if ((count == 1 || hamburguerApu.qtdCerveja <= melhorHamburguer.qtdCerveja) && hamburguerApu.qtdMaxComida > melhorHamburguer.qtdMaxComida
+                || (hamburguerApu.qtdCerveja == 0 && melhorHamburguer.qtdCerveja > 0)) {
                 melhorHamburguer.setQtdCerveja(hamburguerApu.getQtdCerveja());
                 melhorHamburguer.setQtdMaxComida(hamburguerApu.getQtdMaxComida());
             }
