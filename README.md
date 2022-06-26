@@ -13,6 +13,7 @@ tempo, deve-se imprimir também o tempo que ele tem para beber, separado por um 
 
 # Exemplo de entrada
 3 5 54
+
 3 5 55
 
 # Exemplo de saída correspondente
