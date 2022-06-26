@@ -18,4 +18,5 @@ tempo, deve-se imprimir também o tempo que ele tem para beber, separado por um 
 
 # Exemplo de saída correspondente
 18
+
 17
